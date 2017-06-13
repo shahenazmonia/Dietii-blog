@@ -1,5 +1,5 @@
 import React from 'react';
-//import reactDOM from 'react-dom';
+import reactDOM from 'react-dom';
 // import store from './store.js';
 // import {Provider} from 'react-redux';
 //import App from './components/containers/App.js';
@@ -7,7 +7,7 @@ import React from 'react';
 const Main = () => {
   return (
       <div>
-      <h1>hi</h1>
+      <h1>hi from react side</h1>
       </div>
 
   );
