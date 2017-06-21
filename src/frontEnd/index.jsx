@@ -1,17 +1,19 @@
 import React from 'react';
 import reactDOM from 'react-dom';
-// import store from './store.js';
-// import {Provider} from 'react-redux';
-//import App from './components/containers/App.js';
+import store from './store.js';
+import { Provider } from 'react-redux';
+ import Slider from './components/containers/slideShape.js'
 
 const Main = () => {
-  return (
-      <div>
-      <h1>hi from react side</h1>
-      </div>
+ return (
+  <Provider store={store}>
 
-  );
+
+      <Slider></Slider>
+    
+      </Provider>
+ );
 };
 
 reactDOM.render(
-  <Main/>, document.getElementById('myApp'));
+<Main/>, document.getElementById('myApp'));
