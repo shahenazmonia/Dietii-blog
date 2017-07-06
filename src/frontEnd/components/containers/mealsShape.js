@@ -1,16 +1,22 @@
-import connect from 'react-redux';
 import Meals from '../meals.js';
+import {connect}from 'react-redux';
+import store from '../../store.js';
 
-const mapStateToProps= (state)=>{
-  return({
-    app: app.state
-  })
+
+const mapStateToProps = (state)=>{
+ return  ({
+   app : state.app
+ })
 };
 
-const mapDispatchToProps=(dispatch)=>{
 
-};
+// const mapDispatchToProps = (dispatch) =>{
+// return({
+//   app: disp
+// })
+// };
 
-const mealsShape= connect(mapStateToProps,mapDispatchToProps)(Meals);
 
-export default mealsShape;
+const MealsShape = connect(mapStateToProps)(Meals);
+
+export default MealsShape;
