@@ -16,4 +16,5 @@ const mapDispatchToProps = (dispatch) =>{
 
 
 const SliderShape = connect(mapStateToProps,mapDispatchToProps)(Slider);
+
 export default SliderShape;
