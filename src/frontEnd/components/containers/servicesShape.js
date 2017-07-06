@@ -9,10 +9,10 @@ const mapStateToProps =(state)=>{
 })
 };
 
-const mapDispatchToProps=(dispatch)=>{
+// const mapDispatchToProps=(dispatch)=>{
+//
+// };
 
-};
-
-const servicesShape= connect(mapStateToProps,mapDispatchToProps)(Services);
+const servicesShape= connect(mapStateToProps)(Services);
 
 export default servicesShape;
