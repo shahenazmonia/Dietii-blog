@@ -1,0 +1,49 @@
+.container-fluid{
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: rgba(239, 239, 239, 0.4);
+}
+.slider-container{
+  display: flex;
+  justify-content: center;
+}
+.slider{
+  height: 520px;
+   width: 100%;
+}
+.navigation{
+  position: absolute;
+float: right;
+background-color: transparent;
+border-color: transparent;
+}
+.navbar-default .navbar-brand{
+  color: red;
+}
+.navbar-default .navbar-nav>li>a {
+    color: red;
+}
+.slider-img{
+position: absolute;
+width: 30%;
+padding: 82px;
+margin-top: 50px;
+}
+.googlestore-img{
+position: absolute;
+padding-top: 268px;
+width: 15%;
+}
+.serviceTitle{
+  padding-top: 20px;
+text-align: center;
+}
+.services-container{
+  display: flex;
+  justify-content: center;
+}
+.service-item{
+  width: 240px;
+  margin: 25px;
+  text-align: center;
+}
