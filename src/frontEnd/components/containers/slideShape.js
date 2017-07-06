@@ -10,11 +10,11 @@ const mapStateToProps = (state)=>{
 };
 
 
-const mapDispatchToProps = (dispatch) =>{
+// const mapDispatchToProps = (dispatch) =>{
+//
+// };
 
-};
 
-
-const SliderShape = connect(mapStateToProps,mapDispatchToProps)(Slider);
+const SliderShape = connect(mapStateToProps)(Slider);
 
 export default SliderShape;
