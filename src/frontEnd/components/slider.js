@@ -1,9 +1,6 @@
 import React from 'react';
 import {Nav,Navbar, NavItem,MenuItem,NavDropdown , alert} from 'react-bootstrap';
 
-
-
-
 function handleSelect(selectedKey) {
 alert('selected ' + selectedKey);
 }
@@ -23,13 +20,13 @@ alert('selected ' + selectedKey);
        <NavItem eventKey={2} href="#">التطبيق</NavItem>
      </Nav>
    </Navbar>
-   <img className='slider-img' src="https://scontent.fjrs2-1.fna.fbcdn.net/v/t34.0-12/19679775_10209485783481089_1261212657_n.png?oh=fcacf6045f5233b43642f9cba664047b&oe=595E17D7" ></img>
+   <img className='slider-img' src="https://raw.githubusercontent.com/shahenazmonia/blog/master/6.png" ></img>
    <img className='googlestore-img' src="https://raw.githubusercontent.com/shahenazmonia/blog/master/4.png" ></img>
-    <img className='slider' src="https://scontent.fjrs2-1.fna.fbcdn.net/v/t34.0-12/19692394_10209466230432275_974313275_n.jpg?oh=1d0d793db09843d72b230c677b140cd0&oe=595AEF23" ></img>
+    <img className='slider' src="https://raw.githubusercontent.com/shahenazmonia/blog/master/header.jpg" ></img>
 </div>
 
   );
-}
+};
 
 
 export default slider;
