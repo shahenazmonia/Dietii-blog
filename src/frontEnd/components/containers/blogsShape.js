@@ -7,10 +7,10 @@ const mapStateToProps =(state)=>{
   });
 };
 
-const mapDispatchToProps =(dispatch)=>{
+// const mapDispatchToProps =(dispatch)=>{
+//
+// };
 
-};
-
-const blogShape = connect (mapStateToProps,mapDispatchToProps)(Blogs);
+const blogShape = connect (mapStateToProps)(Blogs);
 
 export default blogShape;
