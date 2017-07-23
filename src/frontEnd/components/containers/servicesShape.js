@@ -4,9 +4,9 @@ import Services from '../services.js';
 
 
 const mapStateToProps =(state)=>{
- return({
+  return({
     app:state.app
-})
+  });
 };
 
 // const mapDispatchToProps=(dispatch)=>{
