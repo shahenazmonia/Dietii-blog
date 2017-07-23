@@ -6,6 +6,7 @@ import SliderShape from './components/containers/slideShape.js';
 import ServicesShape from './components/containers/servicesShape.js';
 import MealsShape from './components/containers/mealsShape.js';
 import BlogShape from './components/containers/blogsShape.js';
+import DietiiStore from './components/containers/dietiiStoreShape.js';
 
 const Main = ()=>{
   return (
@@ -15,6 +16,7 @@ const Main = ()=>{
         <ServicesShape></ServicesShape>
         <MealsShape></MealsShape>
         <BlogShape></BlogShape>
+        <DietiiStore></DietiiStore>
       </div>
 
     </Provider>
