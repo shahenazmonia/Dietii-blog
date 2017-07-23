@@ -1,6 +1,6 @@
 .container-fluid {
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 0;
+    padding-left: 0;
     background-color: white;
 }
 
@@ -115,7 +115,7 @@ align-items: center;
 }
 .blogs-images{
   width: 30%;
-  height: 250px;
+  height: 265px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -135,4 +135,29 @@ align-items: center;
   padding: 10px;
   position: absolute;
   bottom: -80px;
+}
+.storeContainer{
+  padding-top: 70px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+}
+.googlestore-content{
+  width: 80%
+}
+.googlestore-content-p {
+  text-align: right;
+  padding-top: 98px;
+}
+img.googlestore-logo {
+    float: right;
+
+}
+.dietii-screenshot{
+  width: 60%
+}
+.store-img{
+width: 35%;
+padding-top: 50px;
+float: left;
 }
