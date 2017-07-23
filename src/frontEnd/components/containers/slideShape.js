@@ -4,9 +4,9 @@ import store from '../../store.js';
 
 
 const mapStateToProps = (state)=>{
- return  ({
-   app : state.app
- })
+  return  ({
+    app : state.app
+  });
 };
 
 
