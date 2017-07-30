@@ -7,6 +7,11 @@ import ServicesShape from './components/containers/servicesShape.js';
 import MealsShape from './components/containers/mealsShape.js';
 import BlogShape from './components/containers/blogsShape.js';
 import DietiiStore from './components/containers/dietiiStoreShape.js';
+import DietiiTeamShape from './components/containers/dietiiTeamShape.js';
+import InstagramShape from './components/containers/instagramShape.js';
+import FooterShape from './components/containers/footerShape.js';
+
+
 
 const Main = ()=>{
   return (
@@ -17,6 +22,9 @@ const Main = ()=>{
         <MealsShape></MealsShape>
         <BlogShape></BlogShape>
         <DietiiStore></DietiiStore>
+        <DietiiTeamShape></DietiiTeamShape>
+        <InstagramShape></InstagramShape>
+        <FooterShape></FooterShape>
       </div>
 
     </Provider>
