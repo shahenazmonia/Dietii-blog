@@ -1,4 +1,4 @@
-import Slider from '../slider.js';
+import Meals from '../meals.js';
 import {connect}from 'react-redux';
 import store from '../../store.js';
 
@@ -11,10 +11,12 @@ const mapStateToProps = (state)=>{
 
 
 // const mapDispatchToProps = (dispatch) =>{
-//
+// return({
+//   app: disp
+// })
 // };
 
 
-const SliderShape = connect(mapStateToProps)(Slider);
+const MealsShape = connect(mapStateToProps)(Meals);
 
-export default SliderShape;
+export default MealsShape;

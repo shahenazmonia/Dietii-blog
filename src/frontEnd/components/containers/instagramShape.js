@@ -1,7 +1,5 @@
-import Slider from '../slider.js';
+import Instagram from '../instagram.js';
 import {connect}from 'react-redux';
-import store from '../../store.js';
-
 
 const mapStateToProps = (state)=>{
   return  ({
@@ -11,10 +9,12 @@ const mapStateToProps = (state)=>{
 
 
 // const mapDispatchToProps = (dispatch) =>{
-//
+// return({
+//   app: disp
+// })
 // };
 
 
-const SliderShape = connect(mapStateToProps)(Slider);
+const InstagramShape = connect(mapStateToProps)(Instagram);
 
-export default SliderShape;
+export default InstagramShape;

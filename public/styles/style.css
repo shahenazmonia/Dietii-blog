@@ -1,0 +1,317 @@
+body, h1, h2, h3, h4, h5, h6, p, a {
+  font-family: "Helvetica Neue LT Arabic";
+
+    /*NEOSANSARABIC*/
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    background-color: white;
+}
+
+.slider-container {
+    background-color: rgba(239, 239, 239, 0.4);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.slider {
+    height: 520px;
+    width: 100%;
+}
+
+.navigation {
+    position: absolute;
+    float: right;
+    background-color: transparent;
+    border-color: transparent;
+}
+.container{
+  flex-direction: row-reverse;
+display: flex;
+}
+ul.nav.navbar-nav{
+  display: flex;
+flex-direction: row-reverse;
+/*padding-top: 25px;
+padding-right: 20px;*/
+}
+.navbar-header{
+  padding-right: 140px;
+    padding-top: 25px;
+}
+
+.navbar-default .navbar-brand {
+    color: red;
+    font-size: 23px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ff8094;
+    font-family: "The Sans";
+}
+.logo-img{
+  position: absolute;
+    top: 38%;
+    right: 5%;
+    width: 110px;
+    height: 40px;
+}
+.logo-apple{
+  position: absolute;
+  top: 23%;
+}
+.navbar-nav >li{
+  top: 38%;
+  right: 29%;
+  padding-right: 20px;
+  font-size: 23px;
+  line-height: 54px;
+}
+
+li.native >a {
+  color: #7ac144 !important;
+font-family: "The Sans";
+font-size: 23px;
+}
+
+.slider-img {
+position: absolute;
+top: 23%;
+width: 25%;
+}
+
+.googlestore-img {
+    max-width: 100%;
+}
+.googlestore-a{
+    top: 63%;
+    left: 50%;
+    position: absolute;
+    width: 17%;
+    transform: translate(-50%, -50%);
+}
+.googlestore-text{
+  position: absolute;
+  font-size: 19px;
+    font-weight: 700;
+    line-height: 29px;
+    top: 43%;
+    color: #ff8094;
+}
+.servicesContainer{
+  margin-top: -21px;
+    display: flex;
+    flex-direction: column;
+}
+
+.serviceTitle {
+    background-color: rgba(239, 239, 239, 0.4);
+    padding-top: 53px;
+    text-align: center;
+    margin-bottom: 0px;
+
+}
+
+.services-container {
+    background-color: rgba(239, 239, 239, 0.4);
+    display: flex;
+    justify-content: center;
+}
+
+.service-item {
+    width: 240px;
+    margin: 25px;
+    text-align: center;
+}
+
+.mealscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagescontainer {
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.mealsTitle {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+.mealimage {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    min-width: 200px;
+}
+
+.meals-images {
+    width: 24%;
+    height: 204px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.blogscontainer {
+    margin-top: 70px;
+    background-color: rgba(239, 239, 239, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.blogs-images-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+
+.blogs-images {
+    width: 30%;
+    height: 265px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    min-width: 200px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 4px;
+    width: 90%;
+    padding: 10px;
+    position: absolute;
+    bottom: -80px;
+}
+
+.storeContainer {
+    padding-top: 70px;
+    /*padding-bottom: 40px;*/
+    display: flex;
+    flex-direction: row;
+}
+
+.googlestore-content {
+    width: 80%
+}
+
+.googlestore-content-p {
+    text-align: right;
+    padding-top: 98px;
+    /*font-size: large;*/
+}
+
+img.googlestore-logo {
+    float: right;
+}
+
+.dietii-screenshot {
+    width: 60%
+}
+
+.store-img {
+    width: 35%;
+    padding-top: 20px;
+    float: left;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    background-color: rgba(239, 239, 239, 0.4);
+}
+
+.team-images-container {
+    display: flex;
+    text-align: center;
+}
+
+.team-img {
+    border-radius: 50%;
+    margin-top: 32px;
+    width: 147px;
+    border: 2px solid #84c528;
+    height: 147px;
+}
+
+.team-img-container {
+    width: 271px;
+    height: 371px;
+    justify-content: center;
+}
+
+.team-img:hover {
+    background-color: #84c528;
+}
+
+.team-images-container a:hover {
+    display: block;
+    background-color: #84c528;
+        text-decoration: none;
+        box-shadow: 0px 0px 24px;
+
+}
+
+.team-images-container a:hover h1{
+  color: #ffffff;
+}
+
+.t-name{
+  text-decoration: none;
+    color: black;
+    font-family: "The Sans";
+    font-size: 25px;
+    font-weight: 700;
+}
+.instagram-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 200px;
+}
+.instagram-title{
+color: #565656;
+font-size: 30px;
+font-weight: 700;
+padding-top: 15px;
+}
+.instagram-image{
+width: 350px;
+height: 351px;
+display: flex;
+margin-top: 50px;
+}
+.footer-container{
+  width: 100%;
+background-color: #da6f83;
+height: 50px;
+}
