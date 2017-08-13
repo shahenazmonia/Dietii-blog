@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardTitle, CardText, CardBlock, CardLink } from 'reactstrap';
 const blogs =()=>{
   return(
-    <div className='blogscontainer'>
+    <div className='blogscontainer' id='blogs'>
       <h1 className='blog-title'> جديد المدونة</h1>
       <div className='blogs-images-container'>
         <div className='blogs-images'>

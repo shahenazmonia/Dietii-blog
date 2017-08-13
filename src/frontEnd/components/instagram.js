@@ -2,7 +2,7 @@ import React from 'react';
 
 const instagram =()=> {
   return(
-    <div className='container instagram-container'>
+    <div className='container instagram-container' id='contactus'>
     <div>
     <h1 className='instagram-title'>تابعنا على الانستغرام</h1>
     </div>

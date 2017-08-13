@@ -3,8 +3,8 @@ import React from 'react';
 
 const services =()=>{
   return(
-    <div >
-      <h1 className ='serviceTitle'>خدماتنا</h1>
+    <div className='servicesContainer ' id='services'>
+      <div><h1 className ='serviceTitle'>خدماتنا</h1></div>
       <div className='services-container'>
         <div className='service-item'>
           <img src="https://raw.githubusercontent.com/shahenazmonia/blog/master/3.png"></img>

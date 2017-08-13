@@ -2,7 +2,7 @@ import React from 'react';
 
 const dietiiStore = ()=>{
   return(
-    <div className='container storeContainer'>
+    <div className='container storeContainer' id='dietiigooglestore'>
       <div className='row'>
         <div className='col-md-offset-2 col-md-6' style={{'text-align': 'right'}}>
           <img className="googlestore-logo" src="https://raw.githubusercontent.com/shahenazmonia/blog/master/5.png"></img>
