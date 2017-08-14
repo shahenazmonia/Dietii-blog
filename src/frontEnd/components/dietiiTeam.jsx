@@ -2,7 +2,7 @@ import React from 'react';
 const DietiiTeam =()=>{
   return(
     <div className ='container-fluied team-container'>
-      <div><h1>فريق العمل</h1></div>
+      <div><h1 className='teamTitile'>فريق العمل</h1></div>
       <div className='row team-images-container'>
         <div  className='col-md-4 team-img-container'>
           <a className='team-name' href="javascript:;">
