@@ -1,4 +1,4 @@
-import Meals from '../meals.js';
+import Meals from '../meals.jsx';
 import {connect}from 'react-redux';
 import store from '../../store.js';
 

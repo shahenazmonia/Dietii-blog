@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import DietiiTeam from '../dietiiTeam.js';
+import DietiiTeam from '../dietiiTeam.jsx';
 
 const mapStateToProps=(state)=>{
   return({

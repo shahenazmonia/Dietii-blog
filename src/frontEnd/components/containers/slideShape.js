@@ -1,4 +1,4 @@
-import Slider from '../slider.js';
+import Slider from '../slider.jsx';
 import {connect}from 'react-redux';
 import store from '../../store.js';
 

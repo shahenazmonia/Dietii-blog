@@ -1,4 +1,4 @@
-import Instagram from '../instagram.js';
+import Instagram from '../instagram.jsx';
 import {connect}from 'react-redux';
 
 const mapStateToProps = (state)=>{
