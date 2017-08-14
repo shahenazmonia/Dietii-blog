@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import Blogs from '../blogs.js';
+import Blogs from '../blogs.jsx';
 
 const mapStateToProps =(state)=>{
   return ({

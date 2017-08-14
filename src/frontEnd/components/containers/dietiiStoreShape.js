@@ -1,4 +1,4 @@
-import dietiiStore from '../dietiiStore.js';
+import dietiiStore from '../dietiiStore.jsx';
 import {connect}from 'react-redux';
 
 

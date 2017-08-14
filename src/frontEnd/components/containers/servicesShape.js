@@ -1,6 +1,6 @@
 import {connect}from 'react-redux';
 import store from '../../store.js';
-import Services from '../services.js';
+import Services from '../services.jsx';
 
 
 const mapStateToProps =(state)=>{
