@@ -1,19 +1,45 @@
-import React from 'react';
+import React, {Component} from 'react';
+import url from '../helper/getImagesURL';
+class meals extends Component {
 
+  componentDidMount() {
+    const {fetchMeals} = this.props;
+    fetchMeals();
+  }
+  componentWillReceiveProps(){
+    const {meals} = this.props;
+    //  console.log('log',meals);
+    if(meals.results)url(meals.results);
+  }
 
-const meals =()=>{
-  return(
-    <div className='mealscontainer'>
-      <h1 className='mealsTitle'> قائمة الوجبات </h1>
+  render() {
+    const {meals} = this.props;
+    console.log(meals.meals.results);
 
-      <div className='imagescontainer' id='meals' >
-        <div className='meals-images'> <img className='mealimage' src="https://raw.githubusercontent.com/shahenazmonia/blog/master/stock-photo-133972145.jpg"></img></div>
-        <div className='meals-images'><img className='mealimage' src="https://raw.githubusercontent.com/shahenazmonia/blog/master/stock-photo-78329919.jpg"></img></div>
-        <div className='meals-images'>  <img className='mealimage' src="https://raw.githubusercontent.com/shahenazmonia/blog/master/stock-photo-114413503.jpg"></img></div>
-        <div className='meals-images'>  <img className='mealimage' src="https://raw.githubusercontent.com/shahenazmonia/blog/master/stock-photo-201760443.jpg"></img></div>
+    return(
+      <div className='mealscontainer'>
+        <h1 className='mealsTitle'> قائمة الوجبات </h1>
+        <div className='imagescontainer' id='meals' >
+          { (!meals.isFetching && meals.meals.results) ?
+            meals.meals.results.map((value,index)=>{
+              if(value.image){
+                { if(index <= 3)
+                  return(<a  href="fff" target="_blank"className='meals-images' key={value.image.url}>
+                    <img  className="mealimage"  src={value.image.url }  />
+
+                  </a>);}}else {
+                <div> <h1> loading</h1></div>;
+              }
+            }
+            ) :
+            <div>
+              <h1>Loading</h1>
+            </div>
+          }
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default meals;

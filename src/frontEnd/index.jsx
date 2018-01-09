@@ -4,7 +4,7 @@ import store from './store.js';
 import { Provider } from 'react-redux';
 import SliderShape from './components/containers/slideShape.js';
 import ServicesShape from './components/containers/servicesShape.js';
-import MealsShape from './components/containers/mealsShape.js';
+import MealsShape from './components/containers/meals.js';
 import BlogShape from './components/containers/blogsShape.js';
 import DietiiStore from './components/containers/dietiiStoreShape.js';
 import DietiiTeamShape from './components/containers/dietiiTeamShape.js';
