@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import url from '../helper/getImagesURL';
 class meals extends Component {
 
@@ -8,13 +9,13 @@ class meals extends Component {
   }
   componentWillReceiveProps(){
     const {meals} = this.props;
-    //  console.log('log',meals);
+    // console.log('log',meals);
     if(meals.results)url(meals.results);
   }
 
   render() {
     const {meals} = this.props;
-    console.log(meals.meals.results);
+    // console.log('xxx',meals.meals.results);
 
     return(
       <div className='mealscontainer'>
@@ -24,10 +25,10 @@ class meals extends Component {
             meals.meals.results.map((value,index)=>{
               if(value.image){
                 { if(index <= 3)
-                  return(<a  href="fff" target="_blank"className='meals-images' key={value.image.url}>
-                    <img  className="mealimage"  src={value.image.url }  />
+                  return(<Link to={`/meal/${value.objectId}`} key={value.objectId} className='meals-images' > 
+                    <img  className="mealimage"  src={value.image.url } key={value.image.url}  />
 
-                  </a>);}}else {
+                  </Link>);}}else {
                 <div> <h1> loading</h1></div>;
               }
             }
