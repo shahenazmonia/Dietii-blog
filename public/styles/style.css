@@ -20,7 +20,16 @@ body, h1, h2, h3, h4, h5, h6, p, a {
     justify-content: center;
     position: relative;
 }
-
+.slider-header{
+  width: 100%;
+height: 100px;
+}
+.header-slider-container {
+    background-color: rgba(239, 239, 239, 0.4);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
 .slider {
     height: 520px;
     width: 100%;
@@ -330,4 +339,28 @@ margin-top: 50px;
   width: 100%;
 background-color: #da6f83;
 height: 50px;
+}
+
+
+/******* meal style *******/
+.meal-image{
+  max-width: 100%;
+  margin-top: 60px;
+  max-height: 550px;
+}
+.meal-content{
+  margin-top: 50px;
+  text-align: right;
+}
+.meal-description{
+  margin-top: 50px;
+font-weight: 500;
+}
+.meal-app-link{
+  margin-top: 150px;
+font-size: 24px;
+color: #ff8094;
+}
+.meal-footer{
+  margin-top: 70px;
 }
