@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Header from './containers/header.js';
 import Meals from './containers/meals.js';
+import propTypes from 'prop-types';
 import Footer from './containers/footerShape.js';
 class meal extends Component {
   componentDidMount() {
@@ -8,10 +9,9 @@ class meal extends Component {
     const objectId= this.props.match.params.id;
     fetchMeal(objectId);
   }
-  componentWillReceiveProps(){
-    const {meal} = this.props;
-
-  }
+  // componentWillReceiveProps(){
+  //   const {meal} = this.props;
+  // }
   render(){
     const {meal} = this.props;
     return(
@@ -23,7 +23,8 @@ class meal extends Component {
             (() => {
               if (meal.meal.image){
                 return (<div className='col-md-5'>
-                  <img className='meal-image' src={meal.meal.image.url}  key={meal.meal.image}/>
+                  <img className='meal-image' src={meal.meal.image.url}
+                    key={meal.meal.image}/>
                 </div>);
               }else {
                 return null;
@@ -34,7 +35,7 @@ class meal extends Component {
           <div className='col-md-7 meal-content'>
             <h2>{meal.meal.name}</h2>
             <p className='meal-description'>{meal.meal.resipe}</p>
-            <a className='meal-app-link' hreff ='https://play.google.com/store/apps/details?id=com.dietiiApp.dietiiApp&hl=ar '> الوجبة داخل التطبيق</a>
+            <a className='meal-app-link' href ='https://play.google.com/store/apps/details?id=com.dietiiApp.dietiiApp&hl=ar '> الوجبة داخل التطبيق</a>
           </div>
 
         </div>
@@ -49,4 +50,9 @@ class meal extends Component {
   }
 }
 
+meal.propTypes={
+  fetchMeal : propTypes.func,
+  match: propTypes.object,
+  meal: propTypes.object
+};
 export default meal;
