@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {HashRouter, Route} from 'react-router-dom';
 import Home from './Home';
 import Meal from './containers/meal';
 
@@ -11,11 +11,11 @@ export const routeCodes = {
 
 export default () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className='app'>
         <Route exact path={publicPath} component={Home}/>
         <Route exact path={routeCodes.MEAL} component={Meal}/>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 };

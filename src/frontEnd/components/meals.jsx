@@ -19,7 +19,7 @@ class meals extends Component {
   }
 
   render() {
-    const {meals} = this.props;
+    const {meals, fetchMeal} = this.props;
     return(
       <div className='mealscontainer'>
         <h1 className='mealsTitle'> {mealsMenu} </h1>
@@ -29,7 +29,8 @@ class meals extends Component {
               if(value.image){
                 index=randomIntFromInterval(0,100);
                 { if(index <= 3)
-                  return( <Link to={`/meal/${value.objectId}`}
+                  return( <Link onClick={() => fetchMeal(value.objectId)}
+                    to={`/meal/${value.objectId}`}
                     key={value.objectId} className='meals-images'>
                     <img className="mealimage" src={value.image.url }
                       key={value.image.url} />
@@ -50,7 +51,8 @@ class meals extends Component {
 
 meals.propTypes = {
   fetchMeals: PropTypes.func,
-  meals: PropTypes.object
+  meals: PropTypes.object,
+  fetchMeal: PropTypes.func
 };
 
 export default meals;

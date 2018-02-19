@@ -4,14 +4,6 @@ import Meals from './containers/meals.js';
 import propTypes from 'prop-types';
 import Footer from './containers/footerShape.js';
 class meal extends Component {
-  componentDidMount() {
-    const {fetchMeal} = this.props;
-    const objectId= this.props.match.params.id;
-    fetchMeal(objectId);
-  }
-  // componentWillReceiveProps(){
-  //   const {meal} = this.props;
-  // }
   render(){
     const {meal} = this.props;
     return(
