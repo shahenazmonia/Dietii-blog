@@ -1,3 +1,5 @@
+import {getMeal,getMealSuccess,getMealFail} from '../constants/actionTypes';
+
 const initialState = {
   isFetching: false,
   meal: {},
@@ -6,19 +8,19 @@ const initialState = {
 
 export default (state = initialState, {type, payload}) => {
   switch (type) {
-  case 'getMeal':
+  case getMeal:
     return {
       ...state,
       isFetching: true,
       error: initialState.error
     };
-  case 'getMealSuccess':
+  case getMealSuccess:
     return {
       ...state,
       isFetching: false,
       meal: payload
     };
-  case 'getMealFail':
+  case getMealFail:
     return {
       ...state,
       isFetching: false,
