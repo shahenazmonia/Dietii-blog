@@ -1,22 +1,22 @@
 import fetch from 'isomorphic-fetch';
 import handleErrors from '../helper/handleErrors';
-
+import {getMeals,getMealsSuccess,getMealsFail} from '../constants/actionTypes';
 const fetchMealsStart = () => {
   return {
-    type: 'getMeals'
+    type: getMeals
   };
 };
 
 const fetchMealsSuccess = (males) => {
   return {
-    type: 'getMealsSuccess',
+    type: getMealsSuccess,
     payload: males
   };
 };
 
 const fetchMealsFails = () => {
   return {
-    type: 'getMealsFail'
+    type: getMealsFail
   };
 };
 
