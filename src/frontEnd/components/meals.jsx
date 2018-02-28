@@ -27,13 +27,16 @@ class meals extends Component {
           { (!meals.isFetching && meals.meals.results) ?
             meals.meals.results.map((value,index)=>{
               if(value.image){
-                index=randomIntFromInterval(0,100);
-                { if(index <= 3)
+                // index=randomIntFromInterval(0,100);
+                // console.log(index.indexOf(3));
+                { if(index<=5)
+                  // value[index ++];
                   return( <Link onClick={() => fetchMeal(value.objectId)}
                     to={`/meal/${value.objectId}`}
                     key={value.objectId} className='meals-images'>
                     <img className="mealimage" src={value.image.url }
                       key={value.image.url} />
+                    <div className='meals-img-name'>  <p> {value.name} </p></div>
                   </Link>);}}else {
                 <div> <h1> loading</h1></div>;
               }
