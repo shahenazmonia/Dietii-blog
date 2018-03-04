@@ -13,14 +13,13 @@ class blogs extends Component {
 
   render() {
     const {blogs,fetchBlogs} = this.props;
-    console.log('bloggs',blogs.blogs.results);
 
     return(
       <div className='blogscontainer' id='blogs'>
         <h1 className='blog-title'> جديد المدونة</h1>
         <div className='blogs-images-container'>
           {(!blogs.blogs.isFetching && blogs.blogs.results) ?
-            blogs.blogs.results.map((value,index)=>{
+            blogs.blogs.results.map((value)=>{
               return(
                 <div className='blogs-images' key={value.objectId} >
                   <img className='blog-image' src={value.imgUri}/>

@@ -11,17 +11,18 @@ class blogsPage extends Component {
 
   render(){
     const {blogs} = this.props;
+    console.log('ggggg',blogs);
     return(
 
       <div className='container-fluid' >
         <Header></Header>
-        <div className ='container'>
-          <div className='col-md-1'>
-          </div>
-          {(!blogs.blogs.isFetching && blogs.blogs.results)?
-            blogs.blogs.results.map((value)=>{
-              return(
-                <div className='col-md-10 ' key={value}>
+
+        {(!blogs.blogs.isFetching && blogs.blogs.results)?
+          blogs.blogs.results.map((value)=>{
+            return(
+              <div className='row' key={value.objectId} style={{'margin-right':'0px','margin-left':'0px'}}>
+                <div className='col-md-1'></div>
+                <div className='col-md-10' >
                   <div className='img-blogs-container'>
                     <img className ='imgs-blogs' src={value.imgUri}/></div>
                   <div className='blogs-container'>
@@ -29,14 +30,12 @@ class blogsPage extends Component {
                     <p className='blogs-content'>{value.content}</p>
                   </div>
                 </div>
+                <div className='col-md-1'></div>
+              </div>
+            );
+          }) : <div> loading </div>
 
-              );
-            }) : <div> loading </div>
-
-          }
-          <div className='col-md-1'>
-          </div>
-        </div>
+        }
         <Footer></Footer>
       </div>
     );
