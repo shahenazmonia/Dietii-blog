@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from './containers/slideShape.js';
+import Slider from './containers/slider.js';
 import ServicesShape from './containers/servicesShape.js';
 import Meals from './containers/meals.js';
 import Blogs from './containers/blogs.js';
