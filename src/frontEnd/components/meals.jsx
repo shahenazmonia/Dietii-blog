@@ -36,7 +36,9 @@ class meals extends Component {
                     key={value.objectId} className='meals-images'>
                     <img className="mealimage" src={value.image.url }
                       key={value.image.url} />
-                    <div className='meals-img-name'>  <p> {value.name} </p></div>
+                    <div className='meals-img-name'>
+                      <p> {value.name} </p>
+                    </div>
                   </Link>);}}else {
                 <div> <h1> loading</h1></div>;
               }

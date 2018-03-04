@@ -394,3 +394,23 @@ color: #ff8094;
 .meal-footer{
   margin-top: 70px;
 }
+
+/****************Blogs Page***************/
+
+.imgs-blogs{
+  max-width: 100%;
+  padding-top: 50px;
+}
+
+.blogs-container{
+  text-align: right;
+  padding: 20px 10px 50px 10px ;
+}
+.blogs-header{
+  color: #ff8094;
+padding-bottom: 20px;
+}
+.img-blogs-container{
+  overflow: hidden;
+height: 400px;
+}

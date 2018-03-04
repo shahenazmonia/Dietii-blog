@@ -1,6 +1,5 @@
 import Slider from '../slider.jsx';
 import {connect}from 'react-redux';
-import store from '../../store.js';
 
 
 const mapStateToProps = (state)=>{
