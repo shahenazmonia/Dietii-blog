@@ -10,4 +10,4 @@ const mapStateToProps=(state)=>{
 //
 // }
 
-export default contactUs= connect(mapStateToProps)(contactUs);
+export default connect(mapStateToProps)(contactUs);
