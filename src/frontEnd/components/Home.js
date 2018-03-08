@@ -4,7 +4,7 @@ import ServicesShape from './containers/servicesShape.js';
 import Meals from './containers/meals.js';
 import Blogs from './containers/blogs.js';
 import DietiiStore from './containers/dietiiStoreShape.js';
-import contactUs from './containers/contactUs.js';
+import ContactUs from './containers/contactUs.js';
 import InstagramShape from './containers/instagramShape.js';
 import FooterShape from './containers/footerShape.js';
 
@@ -18,7 +18,7 @@ const Home = ()=>{
       <Meals></Meals>
       <Blogs></Blogs>
       <DietiiStore></DietiiStore>
-      <contactUs></contactUs>
+      <ContactUs></ContactUs>
       <InstagramShape></InstagramShape>
       <FooterShape></FooterShape>
     </div>
