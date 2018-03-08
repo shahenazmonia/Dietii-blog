@@ -15,7 +15,6 @@ export default (state = initialState, {type, payload}) => {
       error: initialState.error
     };
   case getBlogSuccess: {
-    console.log(payload);  
     return {
       ...state,
       isFetching: false,
