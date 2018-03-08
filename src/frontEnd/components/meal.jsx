@@ -4,8 +4,15 @@ import Meals from './containers/meals.js';
 import propTypes from 'prop-types';
 import Footer from './containers/footerShape.js';
 class meal extends Component {
+
+  componentDidMount() {
+    const objectId = this.props.match.params.id;
+    this.props.fetchMeal(objectId);
+  }
+
   render(){
     const {meal} = this.props;
+    console.log(meal);
     return(
       <div>
         <Header></Header>
@@ -44,7 +51,6 @@ class meal extends Component {
 
 meal.propTypes={
   fetchMeal : propTypes.func,
-  match: propTypes.object,
   meal: propTypes.object
 };
 export default meal;

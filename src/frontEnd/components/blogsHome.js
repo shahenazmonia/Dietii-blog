@@ -1,19 +1,16 @@
 import React , {Component} from 'react';
-import {Card, CardTitle, CardText, CardBlock, CardLink} from 'reactstrap';
-
+import {Card, CardTitle,CardBlock} from 'reactstrap';
+import {Link} from 'react-router-dom';
+import propTypes from 'prop-types';
 class blogs extends Component {
 
   componentDidMount() {
     const {fetchBlogs} = this.props;
     fetchBlogs();
   }
-  componentWillReceiveProps(){
-    const {blogs} = this.props;
-  }
 
   render() {
-    const {blogs,fetchBlogs} = this.props;
-
+    const {blogs} = this.props;
     return(
       <div className='blogscontainer' id='blogs'>
         <h1 className='blog-title'> جديد المدونة</h1>
@@ -28,7 +25,7 @@ class blogs extends Component {
                       <CardTitle>{value.title}</CardTitle>
                     </CardBlock>
                     <CardBlock>
-                      <CardLink href={value.objectId}>اقرأ المزيد</CardLink>
+                      <Link to={`/blog/${value.objectId}`} > اقرأ المزيد </Link>
                     </CardBlock>
                   </Card>
                 </div>
@@ -43,4 +40,9 @@ class blogs extends Component {
     );
   }
 }
+blogs.propTypes ={
+  fetchBlogs:propTypes.func,
+  blogs:propTypes.object
+};
+
 export default blogs;

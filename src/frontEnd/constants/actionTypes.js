@@ -7,3 +7,6 @@ export const getMealFail = 'getMealFail';
 export const getBlogs = 'getBlogs';
 export const getBlogsSuccess = 'getBlogsSuccess';
 export const getBlogsFail = 'getBlogsFail';
+export const getBlog = 'getBlog';
+export const getBlogSuccess = 'getBlogSuccess';
+export const getBlogFail = 'getBlogFail';

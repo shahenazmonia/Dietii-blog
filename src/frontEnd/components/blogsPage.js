@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Header from './containers/header';
 import Footer from './containers/footerShape';
+import {Link} from 'react-router-dom';
 import propTypes from 'prop-types';
 class blogsPage extends Component {
 
@@ -9,9 +10,9 @@ class blogsPage extends Component {
     fetchBlogs();
   }
 
+
   render(){
     const {blogs} = this.props;
-    console.log('ggggg',blogs);
     return(
 
       <div className='container-fluid' >
@@ -20,7 +21,8 @@ class blogsPage extends Component {
         {(!blogs.blogs.isFetching && blogs.blogs.results)?
           blogs.blogs.results.map((value)=>{
             return(
-              <div className='row' key={value.objectId} style={{'margin-right':'0px','margin-left':'0px'}}>
+              <div className='row' key={value.objectId}
+                style={{'margin-right':'0px','margin-left':'0px'}}>
                 <div className='col-md-1'></div>
                 <div className='col-md-10' >
                   <div className='img-blogs-container'>
@@ -28,6 +30,13 @@ class blogsPage extends Component {
                   <div className='blogs-container'>
                     <h4 className='blogs-header'> {value.title}</h4>
                     <p className='blogs-content'>{value.content}</p>
+
+                  </div>
+                  <div className='blog-buttons'>
+                    <button className = 'blog-button'>
+                      <Link to={`/blog/${value.objectId}`}
+                        className='blog-button-text'> اقرأ المزيد </Link>
+                    </button>
                   </div>
                 </div>
                 <div className='col-md-1'></div>
@@ -36,7 +45,10 @@ class blogsPage extends Component {
           }) : <div> loading </div>
 
         }
-        <Footer></Footer>
+
+        <div className='meal-footer'>
+          <Footer></Footer>
+        </div>
       </div>
     );
   }

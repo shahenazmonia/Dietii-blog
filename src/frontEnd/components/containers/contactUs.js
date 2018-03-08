@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import DietiiTeam from '../dietiiTeam.jsx';
+import contactUs from '../contactUs.jsx';
 
 const mapStateToProps=(state)=>{
   return({
@@ -10,6 +10,4 @@ const mapStateToProps=(state)=>{
 //
 // }
 
-const dietiiTeamShape= connect(mapStateToProps)(DietiiTeam);
-
-export default dietiiTeamShape;
+export default connect(mapStateToProps)(contactUs);

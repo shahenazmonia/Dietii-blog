@@ -291,6 +291,8 @@ img.googlestore-logo {
 .team-images-container {
     display: flex;
     text-align: center;
+    padding-top: 20px;
+padding-bottom: 50px;
 }
 
 .team-img {
@@ -302,8 +304,7 @@ img.googlestore-logo {
 }
 
 .team-img-container {
-    width: 271px;
-    height: 371px;
+    width: 200px;
     justify-content: center;
 }
 
@@ -405,6 +406,8 @@ color: #ff8094;
 .blogs-container{
   text-align: right;
   padding: 20px 10px 50px 10px ;
+  height: 121px;
+  overflow: hidden;
 }
 .blogs-header{
   color: #ff8094;
@@ -413,4 +416,52 @@ padding-bottom: 20px;
 .img-blogs-container{
   overflow: hidden;
 height: 400px;
+}
+.blog-button{
+  width: 20%;
+    border: 1px solid;
+    margin-top: 30px;
+    border-radius: 15%;
+    background-color: transparent;
+    border-color: #ff8094;
+}
+.blog-button-text{
+  color: #ff8094;
+font-size: 20px;
+}
+.blog-buttons{
+  text-align: center;
+  padding-bottom: 20px;
+}
+.blog-button-text:hover{
+  text-decoration: none;
+  color: #ff8094;
+}
+
+.blog-container{
+  text-align: right;
+  padding: 20px 10px 50px 10px;
+}
+
+/*************** contactus *******************/
+.fa-twitter {
+    display: inline-block;
+    font-size:50px;
+    overflow: visible;
+    vertical-align: -.125em;
+    color: #55ACEE;
+   /*color: white;*/
+}
+
+.fa-facebook-square {
+    display: inline-block;
+    font-size: 50px;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+    color: #3b5998;
+    /* border: none; */
+}
+.instagram-icon {
+      height: 50px;
 }
