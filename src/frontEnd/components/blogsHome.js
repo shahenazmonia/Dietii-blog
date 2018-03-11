@@ -2,8 +2,15 @@ import React , {Component} from 'react';
 import {Card, CardTitle,CardBlock} from 'reactstrap';
 import {Link} from 'react-router-dom';
 import propTypes from 'prop-types';
+import {RingLoader} from 'react-spinners';
 class blogs extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: true
+    };
+  }
   componentDidMount() {
     const {fetchBlogs} = this.props;
     fetchBlogs();
@@ -30,7 +37,12 @@ class blogs extends Component {
                   </Card>
                 </div>
               );
-            }) : <div> loading </div>
+            }) :   <div className='sweet-loading'>
+              <RingLoader
+                color={'#ff8094'}
+                loading={this.state.loading}
+              />
+            </div>
           }
 
 

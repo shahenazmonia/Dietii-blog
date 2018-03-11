@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import url from '../helper/getImagesURL';
 import PropTypes from 'prop-types';
+import {RingLoader} from 'react-spinners';
 import {mealsMenu} from '../constants/componentStaticVariables';
 const randomIntFromInterval = (min,max) =>{
 
@@ -9,6 +10,12 @@ const randomIntFromInterval = (min,max) =>{
 };
 class meals extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: true
+    };
+  }
   componentDidMount() {
     const {fetchMeals} = this.props;
     fetchMeals();
@@ -44,8 +51,11 @@ class meals extends Component {
               }
             }
             ) :
-            <div>
-              <h1>Loading</h1>
+            <div className='sweet-loading'>
+              <RingLoader
+                color={'#ff8094'}
+                loading={this.state.loading}
+              />
             </div>
           }
         </div>
