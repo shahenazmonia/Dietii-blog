@@ -12,7 +12,6 @@ class meal extends Component {
 
   render(){
     const {meal} = this.props;
-    console.log(meal);
     return(
       <div>
         <Header></Header>
