@@ -36,7 +36,7 @@ class meals extends Component {
               if(value.image){
                 // index=randomIntFromInterval(0,100);
                 // console.log(index.indexOf(3));
-                { if(index<=5)
+                { if(index<=4)
                   // value[index ++];
                   return( <Link onClick={() => fetchMeal(value.objectId)}
                     to={`/meal/${value.objectId}`}
