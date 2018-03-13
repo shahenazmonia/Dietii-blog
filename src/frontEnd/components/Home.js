@@ -18,9 +18,8 @@ const Home = ()=>{
       <Meals></Meals>
       <Blogs></Blogs>
       <DietiiStore></DietiiStore>
-      <ContactUs></ContactUs>
       <InstagramShape></InstagramShape>
-      <FooterShape></FooterShape>
+      <ContactUs></ContactUs>
     </div>
   );
 };

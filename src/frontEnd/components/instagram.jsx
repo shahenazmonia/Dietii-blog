@@ -2,11 +2,11 @@ import React from 'react';
 
 const instagram =()=> {
   return(
-    <div className='container instagram-container' id='contactus'>
+    <div className='container-fluied instagram-container' id='contactus'>
       <div>
         <h1 className='instagram-title'>تابعنا على الانستغرام</h1>
       </div>
-      <div className='row'>
+      <div className='row' style={{'margin-right':'0px','margin-left':'0px'}}>
         <div className ='col-md-4'>
           <a> <img  className='instagram-image' src='https://raw.githubusercontent.com/shahenazmonia/blog/master/stock-photo-158341493.jpg'></img></a>
         </div>

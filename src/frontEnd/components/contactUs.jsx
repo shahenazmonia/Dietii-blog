@@ -2,8 +2,6 @@ import React from 'react';
 const contactUs =()=>{
   return(
     <div className ='container-fluied team-container'>
-
-      <div><h1 className='teamTitile'>تواصل معنا</h1></div>
       <div className='row team-images-container'>
         <div  className='col-md-4 team-img-container'>
           <i className='fab fa-facebook-square'></i>
