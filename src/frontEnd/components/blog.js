@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Header from './containers/header.js';
 import Footer from './containers/footerShape.js';
+import propTypes from 'prop-types';
 class Blog extends Component {
 
   componentDidMount(){
@@ -18,7 +19,7 @@ class Blog extends Component {
           style={{'margin-right':'0px','margin-left':'0px'}}>
           <div className='col-md-1'></div>
           <div className='col-md-10' >
-            <div>
+            <div className='single-blog-container'>
               <img className ='imgs-blogs' src={blog.blog.imgUri}/></div>
             <div className='blog-container'>
               <h4 className='blogs-header'> {blog.blog.title}</h4>
@@ -33,5 +34,10 @@ class Blog extends Component {
   }
 
 }
-
+Blog.propTypes={
+  blog: propTypes.object,
+  fetchBlog:propTypes.func,
+  match:propTypes.object,
+  params:propTypes.object
+};
 export default Blog;
