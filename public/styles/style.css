@@ -169,6 +169,13 @@ width: 25%;
       opacity: .2;
 }
 
+.meals-images:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .meals-images:hover .meals-img-name{
   position: absolute;
   justify-content: center;
