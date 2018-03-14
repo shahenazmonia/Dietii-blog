@@ -17,7 +17,7 @@ const contactUs =()=>{
           </div>
         </div>
         <div className='col-md-6'>
-          <p className='dietii-sig'>POWERED BY : DIETII TEAM</p>
+          <p className='dietii-sig'>جميع الحقوق محفوظة : دايتي</p>
         </div>
 
 
