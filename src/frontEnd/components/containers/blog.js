@@ -1,15 +1,18 @@
 import {connect} from 'react-redux';
 import Blog from '../blog.js';
 import {fetchBlog} from '../../actions/blogAction.js';
+import {fetchBlogs} from '../../actions/blogsAction.js';
 
-const mapStateToProps =({blog})=>{
+const mapStateToProps =({blog,blogs})=>{
   return ({
-    blog
+    blog,
+    blogs
   });
 };
 
 const mapDispatchToProps ={
-  fetchBlog
+  fetchBlog,
+  fetchBlogs
 };
 
 export default connect (mapStateToProps,mapDispatchToProps)(Blog);

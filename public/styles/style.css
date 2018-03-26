@@ -492,3 +492,26 @@ justify-content: space-between;
     align-items: center;
         margin-top: 60px;
 }
+.blog-right-side {
+    padding-right: 55px;
+}
+.blog-other-img{
+max-width: 120px;
+max-height: 140px;
+padding: 50px 13px 0 0;
+}
+h4.blog-other-name {
+    padding: 55px 10px 0 0;
+    color: black;
+    text-decoration: none;
+}
+.other-article-container{
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+}
+.other-article-header{
+  text-align: right;
+    padding-top: 35px;
+    padding-right: 25px;
+}
