@@ -28,7 +28,8 @@ class blogsPage extends Component {
         {(!blogs.blogs.isFetching && blogs.blogs.results)?
           blogs.blogs.results.map((value)=>{
             return(
-              <div className='row' key={value.objectId}
+              <div className='cont' key={value.objectId}>
+              <div className='row'
                 style={{'margin-right':'0px','margin-left':'0px'}}>
                 <div className='col-md-1'></div>
                 <div className='col-md-10' >
@@ -40,14 +41,13 @@ class blogsPage extends Component {
 
                   </div>
                   <div className='blog-buttons'>
-                    <button className = 'blog-button'>
                       <Link to={`/blog/${value.objectId}`}
                         className='blog-button-text'> اقرأ المزيد </Link>
-                    </button>
                   </div>
                 </div>
                 <div className='col-md-1'></div>
               </div>
+                </div>
             );
           }) :   <div className='sweet-loading'>
             <RingLoader
@@ -62,6 +62,7 @@ class blogsPage extends Component {
           <Footer></Footer>
         </div>
       </div>
+
     );
   }
 }
