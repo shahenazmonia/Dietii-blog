@@ -240,6 +240,12 @@ width: 25%;
     min-width: 200px;
 }
 
+.blogs-content{
+  white-space: pre-wrap;
+line-height: 32px;
+direction: rtl;
+}
+
 .card {
     background-color: white;
     border-radius: 4px;
