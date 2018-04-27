@@ -25,7 +25,6 @@ class blogsPage extends Component {
       <div className='container-fluid' >
         <Header></Header>
 
-
         <div className='cont'>
           <div className='row'
             style={{'margin-right':'0px','margin-left':'0px'}}>
@@ -61,6 +60,8 @@ class blogsPage extends Component {
             </div>
 
             <div className='col-md-1'></div>
+
+       
           </div>
         </div>
 
