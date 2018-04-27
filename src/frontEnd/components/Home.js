@@ -18,7 +18,6 @@ const Home = ()=>{
       <Meals></Meals>
       <Blogs></Blogs>
       <DietiiStore></DietiiStore>
-      <InstagramShape></InstagramShape>
       <ContactUs></ContactUs>
     </div>
   );
