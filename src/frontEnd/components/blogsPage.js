@@ -29,25 +29,25 @@ class blogsPage extends Component {
           blogs.blogs.results.map((value)=>{
             return(
               <div className='cont' key={value.objectId}>
-              <div className='row'
-                style={{'margin-right':'0px','margin-left':'0px'}}>
-                <div className='col-md-1'></div>
-                <div className='col-md-10' >
-                  <div className='img-blogs-container'>
-                    <img className ='imgs-blogs' src={value.imgUri}/></div>
-                  <div className='blogs-container'>
-                    <h4 className='blogs-header'> {value.title}</h4>
-                    <p className='blogs-content'>{value.content}</p>
+                <div className='row'
+                  style={{'margin-right':'0px','margin-left':'0px'}}>
+                  <div className='col-md-1'></div>
+                  <div className='col-md-10' >
+                    <div className='img-blogs-container'>
+                      <img className ='imgs-blogs' src={value.imgUri}/></div>
+                    <div className='blogs-container'>
+                      <h4 className='blogs-header'> {value.title}</h4>
+                      <p className='blogs-content'>{value.content}</p>
 
-                  </div>
-                  <div className='blog-buttons'>
+                    </div>
+                    <div className='blog-buttons'>
                       <Link to={`/blog/${value.objectId}`}
                         className='blog-button-text'> اقرأ المزيد </Link>
+                    </div>
                   </div>
+                  <div className='col-md-1'></div>
                 </div>
-                <div className='col-md-1'></div>
               </div>
-                </div>
             );
           }) :   <div className='sweet-loading'>
             <RingLoader
