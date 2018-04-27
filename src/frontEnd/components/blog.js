@@ -39,10 +39,11 @@ class Blog extends Component {
 
           <div className='col-md-8 blog-right-side' >
             <div className='single-blog-container'>
-              <img className ='imgs-blogs' src={blog.blog.imgUri}/></div>
+              <img className ='imgs-blogs' src={blog.blog.imgUri}/>
+            </div>
             <div className='blog-container'>
               <h4 className='blogs-header'> {blog.blog.title}</h4>
-              <p className='blogs-content'>{blog.blog.content}</p>
+              <p className='blog-content'>{blog.blog.content}</p>
             </div>
           </div>
 
