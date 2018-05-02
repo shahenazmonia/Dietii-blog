@@ -29,7 +29,7 @@ class Blog extends Component {
                     <Link onClick={() => fetchBlog(value.objectId)} to={`/blog/${value.objectId}`} style={{'text-decoration': 'none'}}>
                       <h4 className='blog-other-name'> {value.title} </h4>
                     </Link>
-                    <img className='blog-other-img' src={value.imgUri}/>
+                    <img className='blog-other-img img-responsive' src={value.imgUri}/>
                   </div>
 
                 );

@@ -26,7 +26,7 @@ class blogs extends Component {
             blogs.blogs.results.map((value)=>{
               return(
                 <div className='blogs-images' key={value.objectId} >
-                  <img className='blog-image' src={value.imgUri}/>
+                  <img className='blog-image img-responsive' src={value.imgUri}/>
                   <Card>
                     <CardBlock className='card-title'>
                       <CardTitle>{value.title}</CardTitle>

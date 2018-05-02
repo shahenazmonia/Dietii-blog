@@ -5,7 +5,7 @@ const dietiiStore = ()=>{
     <div className='container storeContainer' id='dietiigooglestore'>
       <div className='row'>
         <div className='col-md-offset-2 col-md-6' style={{'text-align': 'right'}}>
-          <img className="googlestore-logo" src="https://raw.githubusercontent.com/shahenazmonia/blog/master/5.png"></img>
+          <img className="googlestore-logo img-responsive" src="https://raw.githubusercontent.com/shahenazmonia/blog/master/5.png"></img>
           <p className='googlestore-content-p'>
             تطبيق بيساعدك تتناولي نفس الوجبات المعتادة لكن بسعرات أقل
             بيعطيكي طرق مبتكرة لوجبات بسعرات قليلة
