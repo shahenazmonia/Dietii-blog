@@ -218,19 +218,21 @@ width: 25%;
 }
 
 .blogs-images-container {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 120px;
+  width: 80%;
+display: flex;
+justify-content: flex-start;
+padding-bottom: 120px;
+flex-wrap: wrap;
 }
 
 .blogs-images {
-    width: 30%;
+  width: 30%;
     height: 265px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 25px;
 }
 
 .blog-image {
@@ -366,6 +368,7 @@ padding-top: 15px;
   width: 100%;
 background-color: #da6f83;
 height: 50px;
+
 }
 
 .header-slider-container {
@@ -392,6 +395,9 @@ height: 100px;
 .meal-description{
   margin-top: 50px;
 font-weight: 500;
+white-space: pre-wrap;
+    line-height: 32px;
+    direction: rtl;
 }
 .meal-app-link{
   margin-top: 150px;
@@ -407,6 +413,8 @@ color: #ff8094;
 /*************  footer  ************/
 .meal-footer{
   margin-top: 70px;
+  bottom: 0;
+
 }
 
 /****************Blogs Page***************/

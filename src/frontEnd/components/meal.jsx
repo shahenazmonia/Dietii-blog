@@ -21,7 +21,7 @@ class meal extends Component {
             (() => {
               if (meal.meal.image){
                 return (<div className='col-md-5'>
-                  <img className='meal-image' src={meal.meal.image.url}
+                  <img className='meal-image img-responsive' src={meal.meal.image.url}
                     key={meal.meal.image}/>
                 </div>);
               }else {
@@ -39,8 +39,9 @@ class meal extends Component {
         </div>
         <div>
           <Meals></Meals>
-          <div className='meal-footer'> <Footer></Footer></div>
+
         </div>
+          <div className='meal-footer'> <Footer></Footer></div>
       </div>);
 
 

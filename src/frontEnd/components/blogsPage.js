@@ -36,7 +36,7 @@ class blogsPage extends Component {
                   return(
                     <div key={value.objectId}>
                       <div className='img-blogs-container'   >
-                        <img className ='imgs-blogs' src={value.imgUri}/>
+                        <img className ='imgs-blogs img-responsive' src={value.imgUri}/>
                       </div>
                       <div className='blogs-container'>
                         <h4 className='blogs-header'> {value.title}</h4>
