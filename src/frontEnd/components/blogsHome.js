@@ -3,6 +3,8 @@ import {Card, CardTitle,CardBlock} from 'reactstrap';
 import {Link} from 'react-router-dom';
 import propTypes from 'prop-types';
 import {RingLoader} from 'react-spinners';
+import SEO from './SEO';
+
 class blogs extends Component {
 
   constructor(props) {
@@ -19,13 +21,22 @@ class blogs extends Component {
   render() {
     const {blogs} = this.props;
     return(
+
       <div className='blogscontainer' id='blogs'>
+
         <h1 className='blog-title'> جديد المدونة</h1>
         <div className='blogs-images-container'>
           {(!blogs.blogs.isFetching && blogs.blogs.results) ?
             blogs.blogs.results.map((value)=>{
               return(
                 <div className='blogs-images' key={value.objectId} >
+                  <SEO
+                    schema="BLOGS"
+                    title={value.title}
+                    description={value.content}
+                    path="dietii-blog.herokuapp.com/#blog"
+                    contentType="product"
+                  />
                   <img className='blog-image img-responsive' src={value.imgUri}/>
                   <Card>
                     <CardBlock className='card-title'>

@@ -1,8 +1,16 @@
 import React from 'react';
+import SEO from './SEO';
 
 const dietiiStore = ()=>{
   return(
     <div className='container storeContainer' id='dietiigooglestore'>
+    <SEO
+    schema="Slider"
+    title="من هو دايتي"
+    description="تطبيق دايتي يحتوي على وجبات محلية، يقوم بحساب السعرات الحرارية اليومية للأشخاص وكيفية التخلص من السعرات الغير لازمة بتمارين مناسب للحصول عبى جسم رشيق ووزن مناسب"
+    path="/"
+    contentType="product"
+    />
       <div className='row'>
         <div className='col-md-offset-2 col-md-6' style={{'text-align': 'right'}}>
           <img className="googlestore-logo img-responsive" src="https://raw.githubusercontent.com/shahenazmonia/blog/master/5.png"></img>
