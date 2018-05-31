@@ -9,7 +9,6 @@ import InstagramShape from './containers/instagramShape.js';
 import FooterShape from './containers/footerShape.js';
 
 
-
 const Home = ()=>{
   return (
     <div>
@@ -19,6 +18,7 @@ const Home = ()=>{
       <Blogs></Blogs>
       <DietiiStore></DietiiStore>
       <ContactUs></ContactUs>
+
     </div>
   );
 };

@@ -21,6 +21,13 @@ class meal extends Component {
             (() => {
               if (meal.meal.image){
                 return (<div className='col-md-5'>
+                <SEO
+                  schema="Meals"
+                  title={meal.meal.name}
+                  description={meal.meal.resipe}
+                  path="dietii-blog.herokuapp.com/#meal"
+                  contentType="product"
+                />
                   <img className='meal-image img-responsive' src={meal.meal.image.url}
                     key={meal.meal.image}/>
                 </div>);

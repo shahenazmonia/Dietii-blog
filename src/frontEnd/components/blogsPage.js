@@ -4,6 +4,7 @@ import Footer from './containers/footerShape';
 import {Link} from 'react-router-dom';
 import propTypes from 'prop-types';
 import {RingLoader} from 'react-spinners';
+import SEO from './SEO';
 class blogsPage extends Component {
 
   constructor(props) {
@@ -36,6 +37,13 @@ class blogsPage extends Component {
                 blogs.blogs.results.map((value)=>{
                   return(
                     <div key={value.objectId}>
+                      <SEO
+                        schema="BLOGS"
+                        title={value.title}
+                        description={value.content}
+                        path="dietii-blog.herokuapp.com/#blogs"
+                        contentType="product"
+                      />
                       <div className='img-blogs-container'   >
                         <img className ='imgs-blogs img-responsive' src={value.imgUri}/>
                       </div>

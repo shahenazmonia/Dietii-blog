@@ -2,10 +2,18 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {Nav,Navbar, NavItem} from 'react-bootstrap';
 const dietiiStore = 'https://play.google.com/store/apps/details?id=com.dietiiApp.dietiiApp';
-
+import SEO from './SEO';
 const slider =  ()=>{
   return(
+
     <div className='slider-container'>
+    <SEO
+    schema="Slider"
+    title="من هو دايتي"
+    description="تطبيق دايتي يحتوي على وجبات محلية، يقوم بحساب السعرات الحرارية اليومية للأشخاص وكيفية التخلص من السعرات الغير لازمة بتمارين مناسب للحصول عبى جسم رشيق ووزن مناسب"
+    path="/"
+    contentType="product"
+    />
       <Navbar className='navigation '>
         <img className='logo-apple' src='https://raw.githubusercontent.com/shahenazmonia/blog/4a3fb9bd1147f3ae8fb9fdb723bcbb71164e2c32/shape-3.png'></img>
         <img className= 'logo-img' src='https://raw.githubusercontent.com/shahenazmonia/blog/4a3fb9bd1147f3ae8fb9fdb723bcbb71164e2c32/------.png'></img>
